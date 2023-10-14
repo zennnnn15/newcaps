@@ -62,7 +62,11 @@ class UserSelectionScreen extends StatelessWidget {
                 UserSelectionTile(
                   userType: 'Child',
                   onPressed: () {
-                 Navigator.push(context, MaterialPageRoute(builder: (context)=>MenuScreen(userUID: user!.uid)));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                MenuScreen(userUID: user!.uid)));
                   },
                 ),
                 // Add more UserSelectionTile widgets for additional user types
@@ -126,7 +130,6 @@ class UserSelectionScreen extends StatelessWidget {
                   },
                   child: Text('Submit'),
                 ),
-
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -140,6 +143,7 @@ class UserSelectionScreen extends StatelessWidget {
       },
     );
   }
+
   Future<String?> validatePIN(String? userUid) async {
     if (userUid == null) {
       return null;
@@ -147,7 +151,8 @@ class UserSelectionScreen extends StatelessWidget {
 
     try {
       String parentDocPath = '/users/$userUid/parents/password';
-      DocumentSnapshot parentDoc = await FirebaseFirestore.instance.doc(parentDocPath).get();
+      DocumentSnapshot parentDoc =
+          await FirebaseFirestore.instance.doc(parentDocPath).get();
 
       if (parentDoc.exists) {
         String pin = parentDoc['pin'].toString();
@@ -248,7 +253,8 @@ class _PinEntryWidgetState extends State<PinEntryWidget> {
                     } else {
                       if (enteredPin.isNotEmpty) {
                         // Handle backspacing
-                        enteredPin = enteredPin.substring(0, enteredPin.length - 1);
+                        enteredPin =
+                            enteredPin.substring(0, enteredPin.length - 1);
                       }
                       if (i > 0) {
                         _focusNodes[i - 1].requestFocus();

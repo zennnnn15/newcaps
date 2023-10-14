@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "960386800363",
+    "project_id": "capstone-focusfinder",
+    "storage_bucket": "capstone-focusfinder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960386800363:android:a3d969e634ea5f1887fcae",
+        "android_client_info": {
+          "package_name": "com.example.capstone_focus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960386800363-ockqjt88jjgverl2tijgfoc777qd5l6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8J-TYiUe5kNFO-GeRMIxxZH0Rlj8U4I0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960386800363-ockqjt88jjgverl2tijgfoc777qd5l6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960386800363:android:422070a4b9b38df087fcae",
+        "android_client_info": {
+          "package_name": "com.example.focusfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960386800363-ockqjt88jjgverl2tijgfoc777qd5l6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8J-TYiUe5kNFO-GeRMIxxZH0Rlj8U4I0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960386800363-ockqjt88jjgverl2tijgfoc777qd5l6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
